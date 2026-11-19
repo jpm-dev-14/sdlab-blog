@@ -6,6 +6,7 @@ The System Design Lab blog: Astro, deployed to GitHub Pages at <https://jpm-dev-
 
 - Posts: `src/content/posts/NN-<slug>.mdx`. Frontmatter: `title`, `description`, `date`, `build`, `repo`, `tag`, `headline`.
 - Every number comes from a results file imported into `src/data/<NN>/<tag>/` together with a provenance manifest (repo, tag, path, sha256). Charts read only those files; nobody retypes a number.
+- Absolute numbers come from runs on Linux hosts. Runs on the macOS laptop go through Docker's VM, so they appear only as relative comparisons, labeled as laptop runs.
 - Links to code point at the tag the post describes, never `main`.
 - Nothing is pushed to `main` (which publishes) without the engineer's go-ahead.
 
